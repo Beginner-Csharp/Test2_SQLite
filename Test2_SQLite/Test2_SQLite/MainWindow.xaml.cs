@@ -28,7 +28,12 @@ namespace Test2_SQLite
             DataAccess.InitializeDatabase();
             DataAccess.AddData("aaaa");
             
-            foreach(string data in DataAccess.GetData())
+            
+        }
+
+        public void Btn_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (string data in DataAccess.GetData())
             {
                 MessageBox.Show(data);
             }
